@@ -13,25 +13,24 @@ public class HangmanMain {
 
     private void run() {
         Scanner scnr = new Scanner(System.in);
-        while (!wordFound.equals(wordToFind) && chances > 0){
+        while (!wordFound.equals(wordToFind) && chances > 0) {
             System.out.println("Itt tartunk : " + wordFound);
-            System.out.println("Hatralevo tippek szama: "+ chances);
+            System.out.println("Hatralevo tippek szama: " + chances);
             System.out.println("Kovetkezo tipped? :");
             String scannedGuess = scnr.nextLine();
-            if (!wordFound.contains(scannedGuess)){
+            if (!wordToFind.contains(scannedGuess)) {
                 System.out.println("Rossz valasz");
                 chances--;
-            }else{
-                wordFound = updateWordFound(wordToFind,wordFound,scannedGuess);
+            } else {
+                wordFound = updateWordFound(wordToFind, wordFound, scannedGuess);
             }
         }
 
-        if(wordToFind.equals(wordFound)){
+        if (wordToFind.equals(wordFound)) {
             System.out.println("Nyertel!");
         } else {
             System.out.println("Nem nyert.");
         }
-
 
     }
 
