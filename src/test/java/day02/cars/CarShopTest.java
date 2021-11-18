@@ -54,28 +54,4 @@ class CarShopTest {
         assertEquals(2, carShop.numberOfCarsCheaperThan(60));
     }
 
-
-//       Car car1 = new Car("Toyota", 1.2, Color.BLACK, 2_300_000);
-//       Car car2 = new Car("Lamborghini", 5.2, Color.BLACK, 10_300_000);
-//
-//
-//
-//    @Test
-//    void addCarTest(){
-//        carShop.addCar(car1);
-//
-//        assertEquals(1,carShop.getCarsForSell().size());
-//        assertEquals("Toyota",carShop.getCarsForSell().get(0).getBrand());
-//    }
-//
-//    @Test
-//    void carShopTest(){
-//        carShop.addCar(new Car("Suzuki", 1.4, Color.RED, 1_500_000));
-//        carShop.addCar(new Car("Toyota", 1.4, Color.GREY, 2_700_000));
-//
-//        assertEquals(4_200_000, carShop.sumCarPrice());
-//    }
-//
-
-
 }
